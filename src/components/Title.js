@@ -1,12 +1,13 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
+import { TitleWrapper } from '../Title.styled';
 
 const Title = ({ title, subtitle }) => {
   return (
-    <div>
+    <TitleWrapper>
       <h1>{title}</h1>
       <p>{subtitle}</p>
-    </div>
+    </TitleWrapper>
   );
 };
 
