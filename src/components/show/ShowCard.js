@@ -1,6 +1,6 @@
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable arrow-body-style */
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 import { Star } from '../styled';
 import { StyledShowCard } from './ShowCard.styled';
@@ -30,4 +30,4 @@ const ShowCard = ({ id, image, name, summary, onStartClick, isStarred }) => {
   );
 };
 
-export default ShowCard;
+export default memo(ShowCard);
